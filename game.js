@@ -20,15 +20,15 @@ let floating = false;
 
 function preload() {
     
-    this.load.image('background', './graphics/background.png');
-    this.load.image('pump_container', './graphics/pump_container.png');
-    this.load.image('pump_press', './graphics/pump_press.png');
-    this.load.image('pump_release', './graphics/pump_release.png');
-    this.load.image('balloon_string', './graphics/balloon_string.png');
-    for (let i = 1; i <= 10; i++) { this.load.image(`balloon${i}`, `./graphics/balloon${i}.png`); }
+    this.load.image('background', './Graphics/background.png');
+    this.load.image('pump_container', './Graphics/pump_container.png');
+    this.load.image('pump_press', './Graphics/pump_press.png');
+    this.load.image('pump_release', './Graphics/pump_release.png');
+    this.load.image('balloon_string', './Graphics/balloon_string.png');
+    for (let i = 1; i <= 10; i++) { this.load.image(`balloon${i}`, `./Graphics/balloon${i}.png`); }
     for (let charCode = 65; charCode <= 90; charCode++) {
         let letter = String.fromCharCode(charCode);
-        this.load.image(`letter_${letter}`, `./graphics/${letter}.png`);
+        this.load.image(`letter_${letter}`, `./Graphics/${letter}.png`);
     }
 }
 
